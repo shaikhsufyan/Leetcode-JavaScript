@@ -4,13 +4,14 @@
 // automatically remove duplicate element
 // it return an object
 
-let set  = new Set(["CODE With","Sufyan"]);
-set.add("Shaikh");
-set.delete("Shaikh")
-set.clear()
-console.log(set);
 
+
+let set  = new Set([1,2,4,5,6]);
+// set.add(7);
+// set.delete(7)
+// set.clear()
  
+console.log(set.has(12));
 
 
 
