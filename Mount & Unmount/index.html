@@ -1,0 +1,24 @@
+✔ When navigating Home → About
+
+About component mounts (first time it appears)
+
+Home component unmounts (gets removed from screen)
+
+✔ When navigating About → Home
+
+Home component mounts (shows again)
+
+About component unmounts (removed)
+
+🔥 So the correct flow is:
+Home → About
+
+❌ Home UNMOUNT
+
+✔ About MOUNT
+
+About → Home
+
+❌ About UNMOUNT
+
+✔ Home MOUNT
