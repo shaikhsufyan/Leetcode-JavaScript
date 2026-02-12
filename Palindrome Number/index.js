@@ -1,41 +1,107 @@
+// What is Palindrome Number or Word
+// When reverse Word or Number then same readable are called palindrome number
+// 121 --> 121 
+// madam --> madam
+// hello --> olleh
 
-// Check Palindrome Number
-
-// const isPalindromeNum = (num) =>{
-//     let original = num.toString();
-//     let reversed = original.split("").reverse().join("");
-
+// const checkPalindrome = (num) =>{
+//     let original = num.toString()
+//     let  reversed = original.split("").reverse().join("")
+//     console.log("reversed",reversed);
+    
 //     if(original === reversed){
-//         console.log(num+" is Palindrome Number");
+//         console.log(original + " is Palindrome Number");
         
 //     }else{
-//         console.log(num+" is not palindrome number");
-        
+//         console.log(original + " is not Palindrome Number");
+
 //     }
 // }
-// isPalindromeNum(122)
+//  checkPalindrome(122)
 
 
 
-// let sentance = "hello madam how are you";
-// let arr = sentance.toLocaleLowerCase()
-// .split(" ");
 
-// arr.forEach((curWord)=>{
-//     let reversed = curWord.split("")
-//     .reverse().join("");
 
-//     if(reversed === curWord){
-//         console.log(curWord+ " is palindrome");
+
+const checkPalindrome = (sent) =>{
+     let sentance = sent.split(" ");
+
+     sentance.forEach((curVal,i)=>{
+        let reversed = curVal.split("").reverse().join("");
+        console.log("reverse",reversed);
+
+        if(reversed === curVal){
+            console.log(curVal+" is Palindrome Word");
+            
+        }else{
+            console.log(curVal+" is not Palindrome Word");
+
+        }
         
-//     }else{
-//         console.log(curWord +" is not palindrome");
-        
-//     }
-// })
+     })
 
 
-
-
-
+}
+ checkPalindrome("hello madam how are you")
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
